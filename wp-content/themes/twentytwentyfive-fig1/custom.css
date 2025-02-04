@@ -1,0 +1,113 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: #F1F0ED;
+    height: 100vh;
+}
+h2{
+    font-size: 1rem;
+}
+.description{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 0.85rem;
+    width: 40vw;
+    z-index: 2;
+    color: #A2A059;
+}
+
+/* Container for horizontal scroll */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 10px; /* Optional, adds padding to the container */
+    scroll-snap-type: x mandatory; /* Optional: snap scrolling to each item */
+}
+
+/* Styling each item */
+.scroll-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    width: 200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    background-color: #3498db; /* Example background color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Optional: Smooth scroll behavior */
+.horizontal-scroll-container {
+    scroll-behavior: smooth;
+}
+
+/* Hide loader initially */
+#loading {
+    display: none;
+}
+
+.svg-title{
+    max-width:20vw;
+}
+
+.header-logo{
+    max-width: 100vw;
+}
+#page{
+    height: 100vh;
+}
+.custom-fields{
+    position: fixed;
+    top: 0;
+    background: white;
+    display: none;
+    width: 50%;
+    right: 0;
+    height: 100vh;
+    background-color: #3C362F;
+    color: #FA5D9F;
+    z-index: 1;
+    padding: 2vw;
+
+}
+.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+.fly{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 5vw;
+}
+.header-logo{
+    position: fixed;
+    z-index: 2;
+    width: 24vw;
+}
+
+hr{
+    display: none;
+}
+
+.title:hover ~ .custom-fields {
+   display: block;
+}
+.post-item{
+    position: relative;
+    /* min-width: 370px; */
+}
+.title{
+    
+}
+.post-number{
+    color: #A2A059;
+}
